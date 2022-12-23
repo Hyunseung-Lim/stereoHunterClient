@@ -171,7 +171,7 @@ export const Evaluation = (props) => {
     function evaluation() {
         axios({
           method: "POST",
-          url:"/evaluation",
+          url:"https://port-0-stereohunterserver-20z52flbz4onwf.gksl2.cloudtype.app/evaluation",
           headers: {
             Authorization: 'Bearer ' + props.token
           },
@@ -209,7 +209,7 @@ export const Evaluation = (props) => {
                 </div>
                 <div className='evalVariable'>
                     <div className='title'>
-                        <div><b>2.</b> 당신은 <b>고정관념의 대상</b>에 해당하시나요?</div>
+                        <div><b>2.</b> 본인이 <b>고정관념의 대상</b>에 해당하시나요?</div>
                         <div className='secondaryTitle'>대상이 여럿인 경우, 가장 주요한 대상 하나를 선정하여 답변해주세요.</div>                     
                     </div>
                     <div className='buttonHolder'>

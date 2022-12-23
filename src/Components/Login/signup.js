@@ -41,7 +41,7 @@ export const Signup = (props) => {
             if(Object.keys(errors).length === 0) {
                 axios({
                     method: 'post',
-                    url: '/signup',
+                    url: 'https://port-0-stereohunterserver-20z52flbz4onwf.gksl2.cloudtype.app/signup',
                     data: {
                         email: email,
                         name: name,

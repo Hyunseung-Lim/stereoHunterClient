@@ -23,7 +23,7 @@ export const Signin = (props) => {
         e.preventDefault();
         axios({
             method: 'post',
-            url: '/token',
+            url: 'https://port-0-stereohunterserver-20z52flbz4onwf.gksl2.cloudtype.app/token',
             data: {
                 email: email,
                 password: password

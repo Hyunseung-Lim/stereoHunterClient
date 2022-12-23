@@ -14,7 +14,7 @@ export const ManagePage = (props) => {
     function getData() {
         axios({
         method: "GET",
-        url:"/manage",
+        url:"https://port-0-stereohunterserver-20z52flbz4onwf.gksl2.cloudtype.app/manage",
         headers: {
             Authorization: 'Bearer ' + props.token
         }

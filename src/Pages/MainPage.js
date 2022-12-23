@@ -38,7 +38,7 @@ export const MainPage = (props) => {
   function getData() {
     axios({
       method: "GET",
-      url:"/profile",
+      url:"https://port-0-stereohunterserver-20z52flbz4onwf.gksl2.cloudtype.app/profile",
       headers: {
         Authorization: 'Bearer ' + props.token
       }
@@ -60,7 +60,7 @@ export const MainPage = (props) => {
         console.log(error.response.headers)
         axios({
           method: "POST",
-          url:"/logout",
+          url:"https://port-0-stereohunterserver-20z52flbz4onwf.gksl2.cloudtype.app/logout",
         })
         .then((response) => {
            props.removeToken()
@@ -85,7 +85,7 @@ export const MainPage = (props) => {
     setDialogeData("로딩중...")
     axios({
       method: "POST",
-      url:"/getInput",
+      url:"https://port-0-stereohunterserver-20z52flbz4onwf.gksl2.cloudtype.app/getInput",
       headers: {
         Authorization: 'Bearer ' + props.token
       },
@@ -109,7 +109,7 @@ export const MainPage = (props) => {
     setDialogeData("로딩중...")
     axios({
       method: "POST",
-      url:"/getInput",
+      url:"https://port-0-stereohunterserver-20z52flbz4onwf.gksl2.cloudtype.app/getInput",
       headers: {
         Authorization: 'Bearer ' + props.token
       },
@@ -145,7 +145,7 @@ export const MainPage = (props) => {
   function setStereo(id, stereo) {
     axios({
       method: "POST",
-      url:"/setStereo",
+      url:"https://port-0-stereohunterserver-20z52flbz4onwf.gksl2.cloudtype.app/setStereo",
       headers: {
         Authorization: 'Bearer ' + props.token
       },
@@ -170,7 +170,7 @@ export const MainPage = (props) => {
   function setAmbiguous() {
     axios({
       method: "POST",
-      url:"/setAmbiguous",
+      url:"https://port-0-stereohunterserver-20z52flbz4onwf.gksl2.cloudtype.app/setAmbiguous",
       headers: {
         Authorization: 'Bearer ' + props.token
       },

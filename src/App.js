@@ -22,7 +22,7 @@ function App() {
           :
           <>
             <Routes>
-              <Route path='/' element={<MainPage token={token} setToken={setToken} removeToken={removeToken}/>} />
+              <Route exact path='/' element={<MainPage token={token} setToken={setToken} removeToken={removeToken}/>} />
               <Route path='/manage' element={<ManagePage token={token} setToken={setToken} removeToken={removeToken}/>}/>
             </Routes>
           </>
