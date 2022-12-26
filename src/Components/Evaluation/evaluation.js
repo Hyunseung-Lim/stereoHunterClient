@@ -133,14 +133,14 @@ export const Evaluation = (props) => {
 
     const likertOption4s = {
         responses: [
-            { value: 1, text: "매우 약하게" },
-            { value: 2, text: "약하게" },
-            { value: 3, text: "중간" },
-            { value: 4, text: "강하게" },
-            { value: 5, text: "매우 강하게" }
+            { value: 6, text: "매우 약하게" },
+            { value: 7, text: "약하게" },
+            { value: 8, text: "중간" },
+            { value: 9, text: "강하게" },
+            { value: 10, text: "매우 강하게" }
         ],
         onChange: val => {
-            setQuestion4(val.value);
+            setQuestion4(val.value - 5);
         }
     };
 

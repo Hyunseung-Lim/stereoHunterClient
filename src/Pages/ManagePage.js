@@ -57,7 +57,7 @@ export const ManagePage = (props) => {
     function setCSV () {
         let lcsv = json2csv.parse(logData);
         let acsv = json2csv.parse(activityData);
-        let lb = new Blob([lcsv], { type: 'text/csv;charset=utf-8;' });
+        let lb = new Blob(["\ufeff"+lcsv], { type: 'text/csv;charset=utf-8;' });
         let ab = new Blob([acsv], { type: 'text/csv;charset=utf-8;' });
         FileSaver.saveAs(lb, 'logData.csv');
         FileSaver.saveAs(ab, 'activityData.csv');
@@ -97,7 +97,7 @@ export const ManagePage = (props) => {
                                     <td>{userLog.isWordIssue}</td>
                                     <td>{userLog.words && userLog.words.map(target => target + '/')}</td>
                                 </>
-                            : (userLog.isStereo === 'ambiguous' ? <td colSpan="6">{userLog.ambiguous}</td> : null) }
+                            : (userLog.isStereo === 'ambiguous' ? <td colSpan="7">{userLog.ambiguous}</td> : null) }
                         </tr>))}
                     </tbody></table>
                 </div>))}

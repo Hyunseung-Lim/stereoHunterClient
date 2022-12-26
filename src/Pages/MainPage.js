@@ -185,6 +185,7 @@ export const MainPage = (props) => {
       setCheckedVoca(getCheckedVoca(res.logData))
     })
     setAmbiguousBtn(false);
+    setIsVocabulary(true);
   }
 
   function isStereo() {
