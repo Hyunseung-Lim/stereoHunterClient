@@ -119,6 +119,7 @@ export const Evaluation = (props) => {
     ]
 
     const likertOption3s = {
+        id:"1",
         responses: [
             { value: 1, text: "전혀 모른다" },
             { value: 2, text: "잘 모른다" },
@@ -132,6 +133,7 @@ export const Evaluation = (props) => {
     };
 
     const likertOption4s = {
+        id:"2",
         responses: [
             { value: 6, text: "매우 약하게" },
             { value: 7, text: "약하게" },
